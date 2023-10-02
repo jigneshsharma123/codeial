@@ -1,9 +1,12 @@
 const express = require('express');
 const port = 4000;
 const app = express();
+const path = require('path');
 //use express Router 
 app.use('/', require('./routes'));
-
+//set up the view engine
+app.set('view engine', 'ejs');
+app.set('views',path.join(__dirname,'views'));
 
 
 
