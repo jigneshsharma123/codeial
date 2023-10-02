@@ -1,9 +1,8 @@
 const express = require('express');
 const port = 4000;
 const app = express();
-
-
-
+//use express Router 
+app.use('/', require('./routes'));
 
 
 
