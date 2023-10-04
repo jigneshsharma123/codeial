@@ -1,21 +1,22 @@
 const express = require('express');
-const port = 4000;
 const app = express();
-const path = require('path');
-//use express Router 
+const port = 3000;
+const expressLayouts = require('express-ejs-layouts');
+
+app.use(expressLayouts);
+
+// use express router
 app.use('/', require('./routes'));
-//set up the view engine
+
+// set up the view engine
 app.set('view engine', 'ejs');
-app.set('views',path.join(__dirname,'views'));
+app.set('views', './views');
 
 
-
-
-//no need to disturb the server 
-app.listen(port, (err)=> {
-    if(err) {
-        console.log("error in listening the port:",port);
+app.listen(port, function(err){
+    if (err){
+        console.log(`Error in running the server: ${err}`);
     }
-    console.log(`successfully listen to the https://localhost:${port}`);
+
+    console.log(`Server is running on port: ${port}`);
 });
-//end of the server code.
