@@ -1,0 +1,61 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header with a background color */
+.main-header {
+    background-color: #007BFF; /* Replace with your desired color */
+    color: white;
+    padding: 10px 0;
+    transition: background-color 0.3s ease; /* Add a transition effect for background color */
+}
+
+/* Center the logo */
+.logo {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the sign-up and sign-in links */
+.user-actions a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Add scrolling animation */
+.scroll-header {
+    background-color: #0056b3; /* Change background color on scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow on scroll */
+}
+.back-button {
+    text-align: center;
+    flex-grow: 1; /* Expands to take available space between logo and user actions */
+}
+
+.btn-back {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Style the button on hover */
+    &:hover {
+        /* background-color: white; */
+         
+        color: red;
+    }
+}
