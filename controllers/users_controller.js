@@ -10,3 +10,11 @@ module.exports.signup = (req,res)=> {
 module.exports.signin  = (req,res)=> {
     res.render('_userSignIn',{title: "SignIn"});
 }
+//get the sign up data
+module.exports.create = (req,res)=> {
+    //todo later
+}
+//for sign in and create a sessino for the user
+module.exports.createSession = (req,res)=> {
+    //todo later
+}
