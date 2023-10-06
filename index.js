@@ -3,7 +3,10 @@ const app = express();
 const port = 3000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/db');
+const cookieParser = require('cookie-parser');
 app.use(expressLayouts);
+app.use(express.urlencoded({extended:true}));
+app.use(cookieParser());
 
 // use express router
 app.use('/', require('./routes'));
