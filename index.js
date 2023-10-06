@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const expressLayouts = require('express-ejs-layouts');
-
+const db = require('./config/db');
 app.use(expressLayouts);
 
 // use express router
@@ -26,4 +26,4 @@ app.listen(port, function(err){
 
 
 
-//beginning the major project - 2
+//week 4 manual Authentication 
